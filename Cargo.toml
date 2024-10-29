@@ -1,0 +1,13 @@
+[package]
+name = "ml_lab1"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "ml"
+
+[dependencies]
+anyhow = "1.0.91"
+scraper = "0.20.0"
+polars = { version = "0.43.1", features = ["csv", "lazy", "to_dummies", "polars-ops", "mode"] }
+rayon = "1.10.0"
